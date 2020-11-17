@@ -1,0 +1,232 @@
+body {
+    font-family: Open Sans, sans-serif;
+}
+
+.menu-header.menu-header-transition {
+    top: 0;
+}
+
+.menu-header {
+    display: inline-flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: -100px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    margin: 0;
+    position: fixed;
+    transition: all .5s cubic-bezier(.4, 0, .2, 1);
+    z-index: 200;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .17), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+.menu-item {
+    position: relative;
+    width: auto;
+    height: 42px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.menu-button {
+    text-decoration: none;
+    color: black;
+    padding: 14px;
+}
+
+.menu-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.koala {
+    position: relative;
+    margin: 10px;
+    display: block;
+    width: 60px;
+    height: 42px;
+    background: none;
+}
+
+.koala {
+    position: relative;
+    margin: 10px;
+    display: block;
+    width: 60px;
+    height: 42px;
+    background: none;
+}
+
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+    content: '';
+    position: absolute;
+    border: #0A3b76 solid 4px;
+    border-radius: 50px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
+}
+
+@keyframes hvr-ripple-out {
+    from {
+        -webkit-backface-visibility: hidden;
+        box-shadow: 0 0 1px transparent;
+    }
+    to {
+        box-shadow: 0 0 1px blue;
+    }
+}
+
+.head {
+    position: absolute;
+    top: 16.5%;
+    left: 25%;
+    width: 50%;
+    height: 67%;
+    background: #A6BECF;
+    border-radius: 50%;
+}
+
+.head-copy {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #A6BECF;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.ear-left {
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    left: -20%;
+    top: 5%;
+    background: #A6BECF;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.ear-right {
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    right: -20%;
+    top: 5%;
+    background: #A6BECF;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.inner-ear {
+    position: absolute;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    background: #819CAF;
+}
+
+.eye-left {
+    position: absolute;
+    background: white;
+    width: 30%;
+    height: 33%;
+    top: 25%;
+    left: 21%;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.eye-right {
+    position: absolute;
+    background: white;
+    width: 30%;
+    height: 33%;
+    top: 25%;
+    right: 21%;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.pupil {
+    position: absolute;
+    width: 28%;
+    height: 30%;
+    top: 35%;
+    left: 36%;
+    border-radius: 50%;
+    background: #27354A;
+}
+
+.nose {
+    position: absolute;
+    background: #BE845F;
+    width: 25%;
+    height: 42.5%;
+    left: 37%;
+    top: 45%;
+    border-radius: 50px;
+    z-index: 4;
+}
+
+.hair-left {
+    position: absolute;
+    top: -8%;
+    left: 30%;
+    width: 20%;
+    height: 20%;
+    background: #A6BECF;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.hair-right {
+    position: absolute;
+    top: -4%;
+    left: 48%;
+    width: 20%;
+    height: 20%;
+    background: #A6BECF;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+@media all and (max-width: 600px) {
+    .box {
+        position: relative;
+        margin: auto;
+        display: block;
+        margin-top: 2%;
+        width: 400px;
+        height: 280px;
+        background: none;
+    }
+}
+
+.page {
+    position: relative;
+    top: 82px;
+    padding: 10px;
+    display: block;
+    max-width: 100vw;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1168px;
+    border: 1px solid lightgray;
+}
