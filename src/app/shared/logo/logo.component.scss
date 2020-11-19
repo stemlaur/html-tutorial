@@ -1,53 +1,3 @@
-*, :after, :before {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Open Sans, sans-serif;
-}
-
-.menu-header.menu-header-transition {
-    top: 0;
-}
-
-.menu-header {
-    display: inline-flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
-    left: 0;
-    right: 0;
-    background-color: white;
-    position: fixed;
-    transition: all .5s cubic-bezier(.4, 0, .2, 1);
-    z-index: 200;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .17), 0 3px 6px rgba(0, 0, 0, .23);
-    margin: auto;
-    box-sizing: border-box;
-}
-
-.menu-item {
-    position: relative;
-    width: auto;
-    height: 42px;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 10px;
-    text-align: center;
-    font-size: large;
-}
-
-.menu-button {
-    text-decoration: none;
-    color: black;
-    padding: 14px;
-}
-
-.menu-button:hover {
-    background-color: black;
-    color: white;
-}
-
 .koala {
     position: relative;
     margin: 10px;
@@ -55,9 +5,16 @@ body {
     width: 60px;
     height: 42px;
     background: none;
-}
-
-.head {
+    position: relative;
+    width: 57px;
+    height: 42px;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+  }
+  
+  .head {
     position: absolute;
     top: 16.5%;
     left: 25%;
@@ -65,18 +22,18 @@ body {
     height: 67%;
     background: #cf9882;
     border-radius: 50%;
-}
-
-.head-copy {
+  }
+  
+  .head-copy {
     width: 100%;
     height: 100%;
     position: absolute;
     background: #cf9882;
     border-radius: 50%;
     z-index: 2;
-}
-
-.ear-left {
+  }
+  
+  .ear-left {
     position: absolute;
     width: 60%;
     height: 65%;
@@ -85,9 +42,9 @@ body {
     background: #cf9882;
     border-radius: 50%;
     z-index: 1;
-}
-
-.ear-right {
+  }
+  
+  .ear-right {
     position: absolute;
     width: 60%;
     height: 65%;
@@ -96,9 +53,9 @@ body {
     background: #cf9882;
     border-radius: 50%;
     z-index: 1;
-}
-
-.inner-ear {
+  }
+  
+  .inner-ear {
     position: absolute;
     border-radius: 50%;
     width: 80%;
@@ -106,9 +63,9 @@ body {
     top: 10%;
     left: 10%;
     background: #d0d9e0;
-}
-
-.eye-left {
+  }
+  
+  .eye-left {
     position: absolute;
     background: white;
     width: 33%;
@@ -117,9 +74,9 @@ body {
     left: 20%;
     border-radius: 50%;
     z-index: 3;
-}
-
-.eye-right {
+  }
+  
+  .eye-right {
     position: absolute;
     background: white;
     width: 26%;
@@ -128,9 +85,9 @@ body {
     right: 23%;
     border-radius: 50%;
     z-index: 3;
-}
-
-.pupil {
+  }
+  
+  .pupil {
     position: absolute;
     width: 28%;
     height: 30%;
@@ -138,9 +95,9 @@ body {
     left: 36%;
     border-radius: 50%;
     background: #27354A;
-}
-
-.nose {
+  }
+  
+  .nose {
     position: absolute;
     background: #3f291b;
     width: 25%;
@@ -149,9 +106,9 @@ body {
     top: 45%;
     border-radius: 14px;
     z-index: 4;
-}
-
-.hair-left {
+  }
+  
+  .hair-left {
     position: absolute;
     top: -4%;
     left: 30%;
@@ -160,9 +117,9 @@ body {
     background: #cf9882;
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-
-.hair-right {
+  }
+  
+  .hair-right {
     position: absolute;
     top: -8%;
     left: 48%;
@@ -171,39 +128,5 @@ body {
     background: #cf9882;
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-
-.page {
-    position: relative;
-    padding: 10px;
-    display: block;
-    max-width: 100vw;
-    box-sizing: border-box;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 1168px;
-}
-
-.page-menu {
-    left: 1px;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    display: inline-block;
-    border: solid;
-    text-align: left;
-    width: 10.5rem;
-    padding: 1em;
-    min-width: 10.5rem;
-    background: #2d3368;
-    color: white;
-}
-
-.main {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: inline-flex;
-}
+  }
+  

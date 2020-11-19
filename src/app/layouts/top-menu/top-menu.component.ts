@@ -27,8 +27,4 @@ export class TopMenuComponent implements AfterViewInit {
     this.isCollapsed = false;
 
   }
-
-  toggle(): void {
-    this.isCollapsed = !this.isCollapsed;
-  }
 }

@@ -1,51 +1,8 @@
 <header>
-  <div class="menu-header"  [@smoothAppearance]="isCollapsed?'initial':'final'">
-    <div class="koala hvr-ripple-out menu-item">
-      <!-- Circular Head-->
-      <div class="head" (click)="toggle()">
-
-        <!-- Circular Head Copy -->
-        <div class="head-copy"></div>
-
-        <!-- Left Ear ~ Light Gray-->
-        <div class="ear-left">
-
-          <!-- Inner ear ~ Dark Gray -->
-          <div class="inner-ear"></div>
-        </div>
-
-        <!-- Right Ear ~ Light Gray-->
-        <div class="ear-right">
-          <!-- Inner Ear ~ Dark Gray-->
-          <div class="inner-ear"></div>
-        </div>
-
-        <!-- Left Outer Eye ~ White -->
-        <div class="eye-left">
-          <!-- Pupil ~ Black -->
-          <div class="pupil">
-          </div>
-        </div>
-
-        <!-- Right Outer Eye ~ White -->
-        <div class="eye-right">
-          <!-- Pupil ~ Black -->
-          <div class="pupil">
-          </div>
-        </div>
-
-        <!-- Nose ~ Brown -->
-        <div class="nose">
-        </div>
-
-        <!-- Hair ~ Light Gray -->
-        <div class="hair-left"></div>
-        <div class="hair-right"></div>
-
-        <!-- End Head -->
-      </div>
-      <!-- End Invisible Box -->
-    </div>
+  <div class="menu-header" [@smoothAppearance]="isCollapsed?'initial':'final'">
+    <a routerLink="/">
+      <app-logo></app-logo>
+    </a>
     <div class="menu-buttons">
       <div class="menu-item"><a routerLink="/first-component" routerLinkActive="active">Study</a></div>
       <div class="menu-item"><a routerLink="/second-component" routerLinkActive="active">Teach</a></div>

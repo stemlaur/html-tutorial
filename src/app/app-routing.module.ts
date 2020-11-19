@@ -6,6 +6,10 @@ import {SecondComponent} from './second/second.component'; // CLI imports router
 const routes: Routes = [
   { path: 'first-component', component: FirstComponent },
   { path: 'second-component', component: SecondComponent },
+  { path: '',
+    redirectTo: '/first-component',
+    pathMatch: 'full'
+  },
 ];
 
 // configures NgModule imports and exports
