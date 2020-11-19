@@ -1,8 +1,8 @@
 <header>
-  <div class="menu-header"  [@smoothCollapse]="isCollapsed?'initial':'final'">
+  <div class="menu-header"  [@smoothAppearance]="isCollapsed?'initial':'final'">
     <div class="koala hvr-ripple-out menu-item">
       <!-- Circular Head-->
-      <div class="head">
+      <div class="head" (click)="toggle()">
 
         <!-- Circular Head Copy -->
         <div class="head-copy"></div>

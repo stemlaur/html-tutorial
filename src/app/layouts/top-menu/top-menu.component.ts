@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
@@ -6,24 +6,29 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
   templateUrl: './top-menu.component.html',
   styleUrls: ['./top-menu.component.scss'],
   animations: [
-    trigger('smoothCollapse', [
+    trigger('smoothAppearance', [
       state('initial', style({
-        top: 0
+        top: -100
       })),
       state('final', style({
-        top: 100
+        top: 0
       })),
-      transition('initial=>final', animate('300ms'))
+      transition('initial => final', animate('0.3s'))
     ]),
   ]
 })
-export class TopMenuComponent implements OnInit {
+export class TopMenuComponent implements AfterViewInit {
   isCollapsed = true;
 
   constructor() {
   }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     this.isCollapsed = false;
+
+  }
+
+  toggle(): void {
+    this.isCollapsed = !this.isCollapsed;
   }
 }
